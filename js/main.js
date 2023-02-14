@@ -2,11 +2,9 @@ var date=document.getElementById("date");
 var month=document.getElementById("month");
 var year=document.getElementById("year");
 
-
 var hour=document.getElementById("hour");
 var minute=document.getElementById("minute");
 var second=document.getElementById("second");
-
 
 var monday=document.getElementById('monday');
 var tuesday=document.getElementById('tuesday');
@@ -22,7 +20,6 @@ var PM=document.getElementById("pm");
 setInterval(()=>{
 
 	var time=new Date()
-
 
 	if(time.getHours()<=12){
 		hour.value=time.getHours();
@@ -76,6 +73,6 @@ setInterval(()=>{
 	else{
 		PM.setAttribute("checked","")
 	}
-},1000)
 
+},1000)
 
